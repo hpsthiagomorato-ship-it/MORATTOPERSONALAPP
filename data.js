@@ -1,0 +1,4 @@
+const DB_KEY='moratto_personal_db_v1';
+const seed={accounts:[{login:'aluno',password:'123456',role:'student',name:'Aluno Demonstração',studentId:'stu-1'},{login:'raylton',password:'123456',role:'admin',name:'Raylton Morato'}],students:[{id:'stu-1',name:'Aluno Demonstração',email:'aluno@demo.com',phone:'(92) 99999-9999',goal:'Hipertrofia',weight:78}],workouts:[{id:'w-1',name:'Treino A — Full Body',studentId:'stu-1',items:[{name:'Agachamento',sets:4,reps:'8-10',done:false},{name:'Supino reto',sets:4,reps:'8-10',done:false},{name:'Remada',sets:4,reps:'10-12',done:false}]}],events:[],payments:[],assessments:[],messages:[]};
+function loadDB(){const raw=localStorage.getItem(DB_KEY);if(raw){try{return JSON.parse(raw)}catch(e){}}localStorage.setItem(DB_KEY,JSON.stringify(seed));return structuredClone(seed)}
+function saveDB(db){localStorage.setItem(DB_KEY,JSON.stringify(db))}
