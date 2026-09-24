@@ -1,14 +1,11 @@
-# Moratto Personal — pacote corrigido
+# Moratto Personal — Landing Page
 
-## O que foi corrigido
-- `index.html` agora vem com `style.css` e `script.js` no mesmo nível.
-- As fotos estão em `assets/`.
-- Área do Aluno e Área do Personal passam por `login.html`.
-- O retorno para o site usa `index.html`.
+Landing page institucional do Moratto Personal, publicada pelo GitHub Pages.
 
-## Acesso de demonstração
-- Aluno: `aluno` / `123456`
-- Personal: `raylton` / `123456`
+## Conteúdo
 
-## Publicação no GitHub Pages
-Envie **todos** os arquivos e pastas deste pacote para a mesma raiz do repositório. Não altere a estrutura.
+A página apresenta o posicionamento da marca, método de trabalho, planos de atendimento e chamada para contato via WhatsApp e Instagram.
+
+## Publicação
+
+O site é publicado a partir da branch `main` na raiz do repositório.
